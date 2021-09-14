@@ -1,0 +1,160 @@
+.track-past {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 1px;
+    top: 0px;
+    border-radius: 50%;
+    background: gray;
+    opacity: 0;    
+  }
+
+  .track-past.pos1 {
+    left: 33px;
+    top: 594px;
+  }
+
+  .track-past.pos2 {
+    left: 29px;
+    top: 580px;
+  }
+
+  .track-past.pos3 {
+    left: 44px;
+    top: 573px;
+  }
+
+  .track-past.pos4 {
+    left: 87px;
+    top: 519px;
+  }
+
+  .track-past.pos5 {
+    left: 84px;
+    top: 501px;
+  }
+
+  .track-past.pos6 {
+    left: 67px;
+    top: 496px;
+  }
+
+  .track-past.pos7 {
+    left: 25px;
+    top: 444px;
+  }
+
+  .track-past.pos8 {
+    left: 31px;
+    top: 429px;
+  }
+
+  .track-past.pos9 {
+    left: 47px;
+    top: 424px;
+  }
+
+  .track-past.pos10 {
+    left: 101px;
+    top: 373px;
+  }
+
+  .track-past.pos11 {
+    left: 110px;
+    top: 358px;
+  }
+
+  .track-past.pos12 {
+    left: 110px;
+    top: 341px;
+  }
+
+  .track-past.pos13 {
+    left: 50px;
+    top: 288px;
+  }
+
+  .track-past.pos14 {
+    left: 37px;
+    top: 282px;
+  }
+
+  .track-past.pos15 {
+    left: 23px;
+    top: 275px;
+  }
+
+  .track-past.pos16 {
+    left: 13px;
+    top: 265px;
+  }
+
+  .track-past.pos17 {
+    left: 6px;
+    top: 251px;
+  }
+
+  .track-past.pos18 {
+    left: 4px;
+    top: 235px;
+  }
+
+  .track-past.pos19 {
+    left: 6px;
+    top: 219px;
+  }
+
+  .track-past.pos20 {
+    left: 12px;
+    top: 207px;
+  }
+
+  .track-past.pos21 {
+    left: 21px;
+    top: 195px;
+  }
+
+  .track-past.pos22 {
+    left: 29px;
+    top: 184px;
+  }
+
+  .track-past.pos23 {
+    left: 40px;
+    top: 176px;
+  }
+
+  .track-past.pos24 {
+    left: 53px;
+    top: 171px;
+  }
+
+  .track-past.pos25 {
+    left: 66px;
+    top: 170px;
+  }
+
+  .track-past.pos26 {
+    left: 77px;
+    top: 176px;
+  }
+
+  .track-past.pos27 {
+    left: 87px;
+    top: 182px;
+  }
+
+  .track-past.pos28 {
+    left: 118px;
+    top: 238px;
+  }
+
+  .track-past.pos29 {
+    left: 111px;
+    top: 253px;
+  }
+
+  .track-past.pos30 {
+    left: 100px;
+    top: 260px;
+  }

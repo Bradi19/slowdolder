@@ -1,0 +1,93 @@
+
+  .button_location {
+    position: absolute;
+    right: 260px;
+    bottom: 30px;
+    width: 200px;
+    height: 52px;
+    background: #3870DC;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-family: Avenir-Medium;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 15px;
+    padding-left: 27px;
+    cursor: pointer;
+
+    &:hover {
+      background: #4481F9;
+    }
+
+    &:active {
+      background: #3060BE;
+    }
+  }
+
+  @media screen and (max-width: 1260px) {
+    .button_location {
+      right: 150px;
+    }
+  }
+
+  @media screen and (max-width: 1230px) {
+    .button_location {
+      right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1120px) {
+    .button_location {
+      right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    .button_location {
+      right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    .button_location {
+      right: 5px;
+    }
+  }
+
+  .button_block{
+    display: flex;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1001px) {
+    .button_block{
+      justify-content: center;
+    }
+    .button_location {
+      position: relative;
+      bottom: 73px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .button_location {
+      bottom: 45px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .button_location {
+      bottom: 149px;
+      left: 2px;
+  }
+  }
+
+  @media screen and (max-width: 375px){
+    .button_location {
+      bottom: 130px;
+      left: 0px;
+    }
+  }
+

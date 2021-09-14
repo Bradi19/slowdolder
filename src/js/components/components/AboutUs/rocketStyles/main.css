@@ -1,0 +1,78 @@
+.space-rocket-start-past:after,
+.space-rocket-small:after,
+.space-rocket-small-past:after {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 50px;
+  transform: rotate(270deg);
+  background: url("../img/rocket-small.svg") no-repeat;
+}
+
+.space-rocket-start-past:after {
+  content: "";
+  width: 50px;
+  height: 68px;        
+  background: url("../img/rocket-start.svg") no-repeat;
+}
+
+.space-rocket-small,
+.space-rocket-small-past {
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  left: -15px;
+  top: -25px;        
+}
+
+.space-rocket-small {
+  animation: rocket-small-appear 500ms forwards;
+}
+
+.smoke-right {
+  opacity: 1;
+}
+
+#space-rocket {
+  position: absolute;
+  left: -80px;
+  top: -40px;
+  opacity: 0;
+}
+
+.container-rocket {
+  position: relative;
+  /*outline: 1px solid gray;  */
+}
+
+#boom-bam {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.1);
+  z-index: 1;
+}
+
+@keyframes rocket-small-appear {
+  from {
+    opacity: 0;          
+  }
+
+  to {
+    opacity: 1;         
+  }
+}
+
+.platform {
+  position: absolute;
+  top: 662px;
+  left: 2px;
+}
+
+.st11 {
+  fill: none;
+  stroke: none;
+  stroke-miterlimit: 10;
+}
+.rocketComponent{
+  margin-bottom: 25px;
+}

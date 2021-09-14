@@ -1,0 +1,83 @@
+.track-blue {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: blue;
+  opacity: 0;
+}
+
+.track-blue.pos1 {
+  left: 111px;
+  top: 215px;
+}
+
+.track-blue.pos2 {
+  left: 113px;
+  top: 229px;
+}
+
+.track-blue.pos3 {
+  left: 107px;
+  top: 243px;
+}
+
+.track-blue.pos4 {
+  left: 98px;
+  top: 254px;
+}
+
+.track-blue.pos5 {
+  left: 83px;
+  top: 260px;
+}
+
+.track-blue.pos6 {
+  left: 65px;
+  top: 258px;
+}
+
+.track-blue.pos7 {
+  left: 50px;
+  top: 253px;
+}
+
+.track-blue.pos8 {
+  left: 36px;
+  top: 246px;
+}
+
+.track-blue.pos9 {
+  left: 25px;
+  top: 236px;
+}
+
+.track-blue.pos10 {
+  left: 17px;
+  top: 221px;
+}
+
+.track-blue.pos11 {
+  left: 11px;
+  top: 207px;
+}
+
+.track-blue.pos12 {
+  left: 10px;
+  top: 190px;
+}
+
+.track-blue.pos13 {
+  left: 13px;
+  top: 175px;
+}
+
+.track-blue.pos14 {
+  left: 22px;
+  top: 160px;
+}
+
+.track-blue.pos15 {
+  left: 33px;
+  top: 148px;
+}
