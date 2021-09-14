@@ -1,0 +1,40 @@
+.space-rocket-small-past {
+    opacity: 0;
+  }
+
+  .space-rocket-start-past.pos0 {
+    position: absolute;
+    left: 79px;
+    top: 615px;
+    transform: rotate(90deg);
+  }
+
+  .space-rocket-small-past.pos1 {
+    left: 58px;
+    top: 529px;
+    transform: rotate(135deg);
+  }
+
+  .space-rocket-small-past.pos2 {
+    left: 31px;
+    top: 451px;
+    transform: rotate(45deg);
+  }
+
+  .space-rocket-small-past.pos3 {
+    left: 62px;
+    top: 378px;
+    transform: rotate(135deg);
+  }
+
+  .space-rocket-small-past.pos4 {
+    left: 75px;
+    top: 293px;
+    transform: rotate(45deg);
+  }
+
+  .space-rocket-small-past.pos5 {
+    left: 90px;
+    top: 185px;
+    transform: rotate(235deg);
+  }
