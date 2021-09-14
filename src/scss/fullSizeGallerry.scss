@@ -1,0 +1,62 @@
+.FullSizeGalleryBack{
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .FullSizeGalleryPhotoContainer{
+    max-width: 80%;
+    max-height: 80%;
+    //margin-left: 196px;
+    //margin-right: 196px;
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    .photoItem{
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .rightArrowCont, .leftArrowCont{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      transition-property: transform, background-color;
+      transition-duration: 1s;
+      height: 100%;
+      width: 11%;
+      img{
+        height: 30px;
+      }
+      /*
+      &:hover{
+        background: rgba(50, 110, 170, 0.5);
+      }
+      img:hover{
+        transform: scale(1.2, 1.2);
+      }
+      */
+    }
+    .rightArrowCont{
+      right: 0;
+      //z-index: 9999;
+    }
+    .leftArrowCont{
+      left: 0;
+      //z-index: 9999;
+    }
+
+  }
+}

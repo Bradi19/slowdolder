@@ -1,0 +1,11 @@
+variables:
+  IMAGE_FRONT_NAME: "ossua/ossystem.ua-front:${CI_PIPELINE_IID}-${CI_COMMIT_SHORT_SHA}"
+  IMAGE_ADMIN_NAME: "ossua/ossystem.ua-admin:${CI_PIPELINE_IID}-${CI_COMMIT_SHORT_SHA}"
+  IMAGE_BACKEND_NAME: "ossua/ossystem.ua-backend:${CI_PIPELINE_IID}-${CI_COMMIT_SHORT_SHA}"
+  PROD_URL: "https://ossystem.ua/"
+  DEV_URL: "https://dev.ossystem.ua/"
+  REPO_URL: "https://${GIT_BOT_CREDS}@git.ossystem.ua/local/admin/infrastructure/ossystem_ua.git"
+
+include:
+  - project: local/admin/ci-cd
+    file: /templates/ossystem/landing/no-upload.yml

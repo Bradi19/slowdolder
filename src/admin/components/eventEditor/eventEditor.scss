@@ -1,0 +1,170 @@
+.addNewVacanceCont{
+    width: 100%;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0;
+    .HeadreEventAdminCont{
+      position: relative;
+      // min-height: 700px;
+      height: 100%;
+      background-color: rgba(68, 166, 246, 0.78);
+      .titleEventAdmin{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 96px;
+        right: 96px;
+        .titleInput{
+          color: rgb(255, 255, 255);
+          text-align: left;
+          font-size: 3.08rem;
+          font-weight: bold;
+          line-height: 55px;
+          z-index: 20;
+        }
+        .dateContEventAdmin{
+          margin-top: 24px;
+          margin-bottom: 24px;
+          position: relative;
+          .dateText{
+            color: rgb(255, 255, 255);
+            font-size: 2.23rem;
+            line-height: 34px;
+            cursor: pointer;
+            margin: 0;
+          }
+          .calendarCont{
+            position: absolute;
+          }
+        }
+        .descriptionInput{
+          color: rgb(255, 255, 255);
+          text-align: left;
+          font-size: 2.23rem;
+          z-index: 20;
+        }
+      }
+    }
+    // background-color: lightgray;
+
+}
+.RichTextEditor__editor___1QqIU{
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.bodyEventContAdm{
+  font-family: Avenir-Regular, sans-serif;
+  color: #103F6E;
+  margin-top: 32px;
+  margin-right: 96px;
+  margin-left: 96px;
+
+  .RichTextEditor__root___2QXK-{
+    border: 1px solid #fff;
+  }
+  .DraftEditor-editorContainer{
+    h1, h2 {
+      font-size: 2.23rem;
+      line-height: 2.61rem;
+      margin-bottom: 8px;
+      font-family: Avenir-Regular, sans-serif;
+    }
+    h3{
+      font-size: 1.38rem;
+      line-height: 2.15rem;
+      margin-bottom: 8px;
+      font-family: Avenir-Regular, sans-serif;
+    }
+    span{
+      line-height: 2.31rem;
+    }
+  }
+  .RichTextEditor__editor___1QqIU .RichTextEditor__paragraph___3NTf9 {
+    font-size: 1.23rem;
+    line-height: 1.84rem;
+    font-family: Avenir-Regular, sans-serif;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .public-DraftStyleDefault-ul, .public-DraftStyleDefault-ol {
+    font-size: 1.23rem;
+    line-height: 2.31rem;
+    font-family: Avenir-Regular, sans-serif;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .resultDescription{
+    font-family: Avenir-Regular, sans-serif;
+    color: #103F6E;
+    h1, h2 {
+      font-size: 2.23rem;
+      line-height: 2.61rem;
+      margin-bottom: 8px;
+    }
+    h3{
+      font-size: 1.38rem;
+      line-height: 2.15rem;
+      margin-bottom: 8px;
+    }
+    span{
+      font-size: 1.23rem;
+      line-height: 1.85rem;
+    }
+    p{
+      font-size: 1.23rem;
+      line-height: 1.85rem;
+      margin-bottom: 24px;
+    }
+    li{
+      font-size: 1.23rem;
+      line-height: 2.31rem;
+    }
+  }
+  .resultDescription {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-left: 32px;
+        position: relative;
+      }
+      li::before {
+        content: "";
+        top: calc(50% - 0.25rem);
+        left: -18px;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #4CBAF9;
+        border-radius: 50%;
+        position: absolute;
+      }
+      margin: 0 0 24px;
+    }
+  }
+}
+
+.uplouderContEventEditor, .previewContEventEditor{
+  margin-left: 96px;
+  margin-right: 96px;
+  margin-top: 32px;
+}
+.uplouderContEventEditor {
+  p{
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: Avenir-Regula, sans-serif;
+    background-color: #44A6F6;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.03rem;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+}
+input {
+    width: 100%;
+}

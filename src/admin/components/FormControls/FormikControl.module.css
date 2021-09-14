@@ -1,0 +1,12 @@
+.formControl {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.formControl__itemsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.formControl__item label {
+    display: block;
+    font-size: 20px;
+}

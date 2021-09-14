@@ -1,0 +1,29 @@
+.dd-menu{
+  .dd-menu-items{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    z-index: 10;
+    ul{
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      //background-color: #fefefe;
+      li{
+        list-style: none;
+        width: max-content;
+        line-height: 200%;
+        min-width: 220px;
+        padding: 5px;
+        &:hover{
+          //background-color: lightblue;
+        }
+        a{
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

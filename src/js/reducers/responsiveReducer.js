@@ -8,6 +8,7 @@ import {
 
 export default (state = {}, action) => {
   const { type } = action;
+
   switch (type) {
     case RESIZE_WINDOW: {
       const { innerWidth, innerHeight } = window;

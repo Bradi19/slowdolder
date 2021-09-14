@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  mongodb:
+    image: docker.io/mongo:3.6.21
+    environment:
+      # MONGO_INITDB_ROOT_USERNAME: root
+      # MONGO_INITDB_ROOT_PASSWORD: passwd
+      MONGO_INITDB_DATABASE: landing-development
+  api:
+    build:
+      dockerfile: docker/api/dev.Dockerfile
+      context: '.'
+    volumes:
+      - .:/opt/ossystem.ua/
+    environment:
+      NODE_ENV: development
+    depends_on:
+      - mongodb
+    ports:
+      - 3000:3000/tcp
+  admin:
+    build:
+      dockerfile: docker/admin/dev.Dockerfile
+      context: '.'
+    volumes:
+      - .:/opt/ossystem.ua/
+    ports:
+      - 8081:8080/tcp
+  front:
+    build:
+      dockerfile: docker/front/dev.Dockerfile
+      context: '.'
+    volumes:
+      - .:/opt/ossystem.ua/
+    ports:
+      - 8080:8080/tcp

@@ -1,0 +1,117 @@
+.vacancy_detail {
+  .arrowBack{
+    position: absolute;
+    top: 81px;
+    left: 20px;
+    transform: rotate(180deg);
+  }
+  .vacansyAplicationCont{
+    margin-top: 96px;
+    margin-right: 96px;
+    margin-left: 96px;
+    &.mobile {
+      margin-top: 30px;
+      margin-right: 0;
+      margin-left: 0;
+      .aplicationFormCont {
+        flex-direction: column;
+      }
+    }
+  }
+  &__header {
+    width: 100%;
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      z-index: -5;
+      left: 0; top: 0;
+      background-color: transparent !important;
+    }
+    & h2 {
+      font-size: 2.9rem;
+      margin-bottom: 28px;
+      max-width: 100%;
+    }
+    &_description {
+      color: #ffffff;
+      //margin-left: 96px;
+      max-width: 53%;
+      & > p {
+        font-family: Avenir-Regular, sans-serif;
+        font-size: 1.8rem;
+        line-height: 34px;
+        &:first-child {
+          margin-bottom: 28px;
+        }
+        &:last-child {
+          margin-bottom: 15px;}
+      }
+    }
+  }
+  &_button_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    & > button {
+      width: 100%;
+      max-width: 413px;
+      height: 56px;
+      padding: 0;
+      background-color: #4CBAF9;
+      margin-top: 87px;
+    }
+  }
+  .vacancy_detail__main{
+    padding-top: 42px;
+    padding-left: 96px;
+    padding-right: 96px;
+    color: #103F6E;
+    &.mobile {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    h1, h2 {
+      font-size: 2.23rem;
+      line-height: 2.61rem;
+      margin-bottom: 8px;
+    }
+    h3{
+      font-size: 1.38rem;
+      line-height: 2.15rem;
+      margin-bottom: 8px;
+      font-family: Avenir-Medium, sans-serif;
+    }
+    p{
+      font-size: 1.23rem;
+      line-height: 1.85rem;
+      margin-bottom: 24px;
+    }
+    li{
+      font-size: 1.23rem;
+      line-height: 2.31rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-left: 32px;
+        position: relative;
+        //padding-left: 1em;
+        //text-indent: -.7em;
+      }
+      li::before {
+        content: "";
+        top: 0.9rem;
+        left: -18px;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #4CBAF9;
+        border-radius: 50%;
+        position: absolute;
+        // color: #4CBAF9;
+      }
+      margin: 0 0 24px;
+    }
+  }
+}

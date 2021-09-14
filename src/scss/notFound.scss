@@ -1,0 +1,49 @@
+.notfoundeContainer {
+    height: calc(100vh - 193px);
+    margin-bottom: -96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    color: #326EAA;
+    .imgContainer {
+        position: relative;
+        img {
+            width: 400px;
+            height: auto; 
+        }
+        .error {
+            position: absolute;
+            top: 40px;
+            left: -2.2rem;
+            font-size: 5rem;
+            font-weight: 900;
+        }
+    }
+    .errorMasage {
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .notfoundeContainer {
+        height: calc(100vh - 336px);
+        min-height: 400px;
+        .imgContainer {
+            padding: 10px;
+            img {
+                width: 270px;
+            }
+            .error {
+                top: 30px;
+                font-size: 55px;
+                left: -15px;
+            }
+        }
+    }
+}

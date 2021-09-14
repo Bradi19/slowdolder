@@ -1,0 +1,25 @@
+.vacanceCardCont{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    background-color: lightgray;
+    margin-top: 2rem;
+}
+.vacanceCardCont > div {
+    padding: 1rem;
+    width: 100%;
+}
+.vacanceCardHeadre {
+    display: inline-flex;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+}
+.titleContainer{
+}
+.ButtonContainer{
+}
+
+.ButtonContainer > Button{
+    margin-left: 1rem;
+}

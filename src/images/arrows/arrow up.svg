@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="9px" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Мобильная/02-Вакансии-Активная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-320.000000, -416.000000)">
+        <g id="Фильтр" transform="translate(0.000000, 395.000000)" fill="#44A6F6" fill-rule="nonzero">
+            <g id="down-arrow" transform="translate(320.000000, 21.000000)">
+                <path d="M15.8362916,0.173913043 C15.6157688,-0.0579710145 15.2574193,-0.0579710145 15.0368965,0.173913043 L8.00773317,7.57971014 L0.964787129,0.173913043 C0.744264357,-0.0579710145 0.385914852,-0.0579710145 0.165392079,0.173913043 C-0.0551306931,0.405797101 -0.0551306931,0.782608696 0.165392079,1.01449275 L7.59425297,8.82608696 C7.70451436,8.94202899 7.84234109,9 7.9939505,9 C8.13177723,9 8.28338664,8.94202899 8.39364802,8.82608696 L15.8225089,1.01449275 C16.0568144,0.782608696 16.0568144,0.405797101 15.8362916,0.173913043 Z" id="Shape" transform="translate(8.000000, 4.500000) scale(1, -1) translate(-8.000000, -4.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

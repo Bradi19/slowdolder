@@ -1,0 +1,111 @@
+.eventHeader {
+  background: url('../images/MACHINELEARNING.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  // padding-top: 30%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .headerContent{
+    position: absolute;
+    // left: 96px;
+    // right: 96px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    color: rgb(255, 255, 255);
+    h2 {
+      font-family: Avenir-Bold, sans-serif;
+      text-align: left;
+      font-size: 3.08rem;
+      font-weight: bold;
+      line-height: 55px;
+      z-index: 20;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 2.23rem;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 2.23rem;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.bodyEventCont{
+  font-size: 1.23rem;
+  color: #103F6E;
+  //margin-right: 96px;
+  //margin-left: 96px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.imgDivEventCont{
+  padding-left: 8px;
+  padding-right: 8px;
+  .imgDivEvent{
+    width: 100%;
+    padding-top: 75%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .eventHeader {
+    padding-top: 30%;
+    .headerContent {
+      left: 96px;
+      right: 96px;
+    }
+  }
+  .bodyEventCont{
+    margin-right: 96px;
+    margin-left: 96px;
+  }
+  .galleryCont{
+    margin-right: 88px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .eventHeader {
+    padding-top: 388px;
+    .headerContent {
+      left: 32px;
+      right: 32px;
+    }
+  }
+  .bodyEventCont{
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+  .galleryCont{
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 767px){
+  .eventHeader {
+    padding-top: 388px;
+    .headerContent {
+      left: 24px;
+      right: 24px;
+    }
+  }
+  .bodyEventCont{
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  .galleryCont{
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}

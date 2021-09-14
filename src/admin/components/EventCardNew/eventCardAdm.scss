@@ -1,0 +1,91 @@
+.blog-card-cont-Adm {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.1);
+  cursor: pointer;
+  word-wrap: break-word;
+  position: relative;
+  .deletEventBtn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+  }
+  .blog-card-trumbnail {
+    width: 100%;
+    padding-top: 78%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .blog-card-trumbnail-hover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(76, 186, 249, 0.61);
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 20%;
+      }
+      &:hover{
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+      }
+    }
+  }
+  h4{
+    font-size: 2.23rem;
+    line-height: 2.61rem;
+    color: #103F6E;
+    margin: 24px;
+  }
+  p{
+    max-height: 5.4rem;
+    font-size: 1.23rem;
+    line-height: 1.8rem;
+    margin: 0px 24px;
+    color: #103F6E;
+    flex: 1 0 auto;
+    overflow: hidden;
+  }
+  .blog-card-footer{
+    margin: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .blog-card-footer-data{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .videoTag{
+        font-size: 1.07rem;
+        margin-left: 30px;
+        color: white;
+        background-color: #4CBAF9;
+        padding: 3px;
+      }
+      h5{
+        font-size: 1.23rem;
+        color: #4CBAF9;
+        margin: 0;
+      }
+    }
+  }
+}
+.hoverEffect:hover{
+  transform: scale(1.05, 1.05);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}

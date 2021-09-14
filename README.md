@@ -1,70 +1,182 @@
-# Getting Started with Create React App
+# react-node [(ossystem.ua)](https://ossystem.ua)
+Сайт ориентирован на потенциальных кандидатов для работы в компании OSSystem.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Requirements:
+1. node.js 8 >= мы используем async/await
+1. mongo 3.4 >=
+1. соблюдение чистоты когда при помощи eslint с настройкой от Airbnb
 
-## Available Scripts
+## Getting Started:
+>$ git clone https://git.ossystem.ua/oss=projects/ossystem.com.ua/front
 
-In the project directory, you can run:
+>$ cd react-node && npm install
 
-### `npm start`
+### Git Process
+1. Беремся за выполнение задачи.
+1. Создаем локально ветку с номером задачи.
+1. Стягиваем к себе ветку development в новосозданую ветку.
+1. Начинаем работать над задачей.
+1. После завершения задачи при попытке коммита, нужно удостовериться что eslint прошел валидацию, иначе не получиться закомитить изменения.
+1. После удачного коммита, мы нашу локальную ветку пушим в глобальный репозиторий, с таким же названием ветки, после чего делаем Pull Request с вашей глобальной ветки в ветку development.
+1. После полного цикла проверки задачи, и когда она полностью готова, удаляется ветка с глобального репозитория.
+1. Повторяем цикл пока не победим все задачи :)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Scripts ( package.json )
+* npm run clean - удаляем папку уже с собраным проектом
+* npm run build - собираем front-end часть проэкта
+* npm run deploy - собираем полностью готовый проект
+* npm run migrate - наполняем пустую базу данныеми
+* npm run start - включаем front часть для работы над задачей
+* npm run server - включаем back часть для работы над задачей
+* npm run lint:eslint - проверяем eslint'ом весь код
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Style guide and project structure:
 
-### `npm test`
+#### scss:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Вся цветовая палитра должна находиться в виде констант в root/src/scss/colorPallete.scss
+1. Все стили связанные с отобржанеия тескста должны храниться в root/src/scss/textStyles.scss в виде описанных классов
+1. создавать отдельный scss файл для каждого существующего компонента контейнера, файл должен начинаться так же как и называется сам класс, а так же, селекты в данном scss файле должны начинаться с названия класса
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### структура папок:
+1. при создании любой папки, она должна содержать всегда index.js
+1. если в папке только 1 класс, она должна находиться в index.js
+1. в каждом .js файле должен быть export default, который в свою очередь должен экспортировать главный класс\функцию данного файла ( не запрещается делать export как вторичного функционала )
+1. Если в папке существуют дополнительные классы, которое помогают основному классу в папке, они не должны использоваться больше нигде, кроме как в своей директории, если есть вероятность того что они будут использоваться вне своей директории, нужно такие компоненты выносить в отдельные свои директории
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Стиль написания .js классов:
+###### Компоненты:
+1. сначала импортируются все что нужно с node_modules, после чего импортируется все остальное
+1. должен быть export default
+1. класс должен называться так же как называется файл\папка
+1. не должен иметь прямой доступ к доступу к данным с redux store ( не должно быть connect метода в компоненте, данные приходять только из вне )
+1. обязательно должны быть прописаны propTypes/defaultProps
+1. все компоненты должны наследоваться от PureComponent ( для сокращения кода, что бы не писать, и делать проверки в shpuldComponentUpdate на rerender )
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###### Example
+```jsx harmony
+    import React, { PureComponent } from 'react';
+    import PropTypes from 'prop-types';
 
-### `npm run eject`
+    export default class NameOfClass extends PureComponent {
+      static propTypes = {
+        string: PropTypes.string,
+        bool: PropTypes.bool,
+        object: PropTypes.shape({
+          value: PropTypes.string.isRequired,
+        }),
+        arrayOf: PropTypes.arrayOf([
+          PropTypes.number,
+          PropTypes.shape({}),
+        ])
+      }
+      static defaultProps = {
+        string: '',
+        bool: false,
+        object: { value: '2' },
+        arrayOf: [1, 1, 1],
+      }
+      render() {
+        return (
+          <div />
+        )
+      }
+    }
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###### Контейнеры:
+1. Должен наследоваться от PureComponent
+1. обязательно должен быть соеденененым с redux
+1. обязательно должны быть описаны propTypes/defaltProps
+1. класс должен называться как файл\папка
+1. желательно использовать bindActionCreator
+1. контейнер может использовать внутри себя и другие контейнеры
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###### Example
+```jsx harmony
+    import React, { PureComponent } from 'react';
+    import PropTypes from 'prop-types';
+    import { connect } from 'react-redux';
+    import { bindActionCreators } from 'redux';
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    import * as someActions from '../../actions/someActions';
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    class NameOfContainer extends PureComponent {
+      static propTypes = {
+        someStore: PropTypes.shape({
+          someValue: PropTypes.array,
+        }),
+        someActions: PropTypes.shape({
+          someAction: PropTypes.func,
+        }),
+      };
+      static defaultProps = {
+        someStore: { someValue: [] },
+        someActions: { someAction: arg => arg }
+      };
+      constructor(props) {
+        super(props);
 
-## Learn More
+        this.state = { defaultValue: 'defaultValue' }
+      }
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+      render() {
+        const {
+          someStore: { someValue },
+          someActions: { someAction }
+        } = this.props;
+        const { defaultValue } = this.state;
+        return (
+          <div>
+            <SomeComponent {...this.props} />
+            <SomeAnotherCompoentn action={someAction} />
+          </div>
+        )
+      }
+    }
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    export default connect(
+      store => ({
+        someStore: store.someStore,
+      }),
+      dispatch => ({
+        someActions: bindActionCreators(someActions, dispatch),
+      }),
+    )(NameOfContainer)
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+###### PropTypes:
+1. Должны быть описан каждый компонент\конейнер
+1. должны быть описаны только те props которые непосредственно используются в данном классе
+1. Детально описывать каждый тип который используется ( не писать PropTypes.object а писать PropTypes.shape({ ... }) )
 
-### Analyzing the Bundle Size
+## Contributing:
+#### Tech Lead
+* Сергей Семко
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Менеджмент
+* Дмитрий Гудко
+* Алексей Кукушкин
+* Максим Негода
 
-### Making a Progressive Web App
+#### Дизайн
+* Николай Волков
+* Анастасия Соловьева
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### разработчики
+* Эдуард Мордвитский
+* Дмитрий Филатов
+* Омельян Масалович
+* Алексей Билоус
+* Андрей Кузьменко
 
-### Advanced Configuration
+## Acknowledgments:
+....
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License:
+MIT
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors:
+[OSSystem](http://ossystem.com.ua)

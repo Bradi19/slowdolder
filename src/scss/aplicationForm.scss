@@ -1,0 +1,401 @@
+.aplicationFormCont {
+  //
+  //.mobile {
+  //  display: flex;
+  //  //flex-direction: column;
+  //  width: 100%;
+  //}
+
+  h3 {
+    text-align: center;
+    font-family: 'Avenir-Regular';
+    font-size: 33px;
+    color: #103f6e;
+  }
+
+  .orDelimiter {
+    width: 100%;
+    max-width: 486px;
+    margin: 28px auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Avenir-Regular', sans-serif;
+    position: relative;
+
+    span:first-child, span:last-child {
+      width: 46%;
+      height: 1px;
+      background-color: #9DA4AB;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+    }
+    span:first-child {
+      left: 0px;
+    }
+    span:last-child {
+      right: 0px;
+    }
+  }
+
+  .callBackForm {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 486px;
+    margin: 0 auto;
+    padding-top: 36px;
+
+    .inputs {
+      display: flex;
+      flex-direction: row;
+
+      label {
+        color: #9DA4AB;
+        font-family: "Avenir-Regular", sans-serif;
+        font-size: 14px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        &.errorLable {
+          color: #F15B4D;
+        }
+
+        .formInp, .errFormInp {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid #A0A0A0;
+          background-color: transparent;
+          margin-bottom: 11px;
+          margin-top: 11px;
+          min-height: 24px;
+          height: auto;
+          outline: none;
+        }
+
+        .errFormInp {
+          border-bottom: 1px solid #F15B4D;
+        }
+      }
+
+      div {
+        width: 20px;
+      }
+    }
+
+    div {
+      button {
+        margin-bottom: 0px !important;
+        box-shadow: none !important;
+        outline: none;
+      }
+    }
+  }
+}
+
+.mainButtonContent{
+  opacity: 1;
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  & > button {
+    width: 100%;
+    max-width: 486px;
+    height: 56px;
+    padding: 0;
+    background-color: #4CBAF9;
+    box-shadow: none;
+  }
+  //text-align: center;
+}
+
+.aplicationForm{
+  //max-height: 0px;
+  //margin-top: 0px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .closeImg {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+  }
+
+  &.mobile {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    .closeImg {
+      bottom: 240px;
+      right: 15px;
+      position: absolute;
+      cursor: pointer;
+
+    }
+  }
+  .formTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    h5{
+      font-size: 18px;
+      font-weight: 400;
+      color: #0F2F5B;
+      font-family: "Avenir-Regular", sans-serif;
+      font-style: normal;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+    }
+  }
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  .inputs{
+    padding: 36px 57px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(255,255,255,0.2);
+    &.mobile {
+      width: 100%;
+      margin-bottom: 50px;
+      min-height: 350px;
+    }
+    .inputFileCont{
+      display: flex;
+      position: relative;
+      margin-bottom: 30px;
+      &.mobile {
+        margin-bottom: 65px;
+      }
+      .myCvInput{
+        flex-grow: 1;
+        height: 25px;
+        margin-right: 16px;
+      }
+      .inputCVFile{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+      .inputFileLabelCont:hover{
+        .deleteFile{
+          display: flex;
+        }
+        .inputCVFileLable{
+          display: none;
+        }
+      }
+      .inputCVFileLable, .deleteFile{
+        //position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #44A6F6;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        &:hover {
+          // border: none;
+          border-color: #326EAA;
+        }
+      }
+      .inputCVFileLable{
+        display: flex;
+      }
+      .deleteFile{
+        display: none;
+      }
+      .inputCVFileLableActive{
+        border-color: #6FD380;
+      }
+    }
+    label{
+      color: #9DA4AB;
+      font-family: "Avenir-Regular", sans-serif;
+      font-size: 14px;
+    }
+    .errorLable{
+      color: #F15B4D;
+    }
+    .formInp, .errFormInp{
+      border: none;
+      background-color: transparent;
+      margin-bottom: 11px;
+      min-height: 24px;
+      height: auto;
+    }
+    .formInp{
+      border-bottom: 1px solid #A0A0A0;
+    }
+    .errFormInp{
+      border-bottom: 1px solid #F15B4D;
+    }
+    .formTextarea {
+      overflow: hidden;
+      height: auto;
+      resize: none;
+      line-height: 24px;
+      transition: 0.4s;
+    }
+    .button{
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      background-color: #44A6F6;
+      box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.1);
+      position: absolute;
+      bottom: 11px;
+      right: 32px;
+      padding: 8px 9px 3px 4px;
+      cursor: pointer;
+      &:hover{
+        background-color: #3d87c3;
+      }
+      div {
+        button {
+          margin-bottom: 0px;
+          box-shadow: none;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .myTextarea{
+      overflow-y: hidden;
+      resize: none;
+      height: 25px;
+    }
+  }// input
+    .contacts{
+      background-size: cover;
+      width: 50%;
+      background: url('../images/aplicationForm/bg form.jpg') no-repeat center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.mobile {
+        width: 100%;
+        height: 450px;
+        position: relative;
+        //margin-top: 80px;
+        display: none;
+      }
+
+      .linkidCont{
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+        .linkedInStyle{
+          font-size: 1.38rem;
+          span{
+            font-weight: 900;
+          }
+        }
+        a{
+          padding: 16px 80px;
+          background-color: #44A6F6;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+        p{
+          color: #FFFFFF;
+          font-size: 2.1rem;
+          font-family: "Avenir-Regular", sans-serif;
+          font-weight: 500;
+          margin-bottom: 40px;
+
+        }
+      }
+
+    }// contacts
+  }
+
+.openForm{
+  max-height: 700px;
+  transition-property: max-height;
+  transition-duration: 1s;
+  transition-delay: 0.3s;
+  position: relative;
+}
+.closeform{
+  max-height: 0;
+  transition-property: max-height;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
+.fadeBtn{
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.6s;
+}
+
+.fadeBtn2{
+  max-height: 0px;
+  transition-property: max-height;
+  transition-duration: 0.01s;
+  transition-delay: 0.6s;
+}
+
+.displayBtn{
+  max-height: 70px;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.6s;
+  transition-delay: 1s;
+}
+
+
+@media screen and (max-width: 480px) {
+  .aplicationFormCont {
+
+    .callBackForm {
+      width: 90%;
+      .inputs {
+        flex-direction: column;
+        label {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .orDelimiter {
+      width: 90%;
+      span:first-child,
+      span:last-child {
+        width: 43%;
+      }
+    }
+  }
+
+  .mainButtonContent > button {
+    width: 90%;
+  }
+}

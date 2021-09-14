@@ -1,0 +1,115 @@
+.career_background_block {
+  width: 100%;
+  height: auto;
+}
+
+.career_dev_container {
+  padding: 0 15%;
+  position: relative;
+  width: 100%;
+
+  &.mobile {
+    padding: 0 32px;
+  }
+
+  & > h3 {
+    font-family: Avenir-Regular, sans-serif;
+    color: #103F6E;
+    font-size: 1.8rem;
+    line-height: 34px;
+    margin-bottom: 29px;
+  }
+
+  & > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 39px;
+  }
+}
+
+.centerWidth{
+  width: 100%;
+  text-align: center;
+}
+
+.centerWidth > h4 {
+  padding: 3rem;
+}
+
+.imgStep{
+  height: 150px;
+  width: 150px;
+}
+
+.flexContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.flexBox1{
+  flex-basis: 15%;
+}
+.flexArrow{
+  flex-basis: 10%;
+}
+
+.conditionContainer {
+  padding-bottom: 3rem;
+}
+.conditionContainer > h5 {
+  padding-bottom: 2rem;
+}
+.textAlignRight{
+  text-align: right;
+}
+.textAlignLeft{
+  text-align: left;
+}
+
+.arrow{
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: red;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.arrow:before{
+  content:'';
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top-color: white;
+  display: inline-block;
+  -webkit-transform: translate(-30px, -50px);
+}
+.arrow.left{
+  transform: rotate(90deg) translate(0px, 25px);
+  -webkit-transform: rotate(90deg) translate(0px, 25px);
+  -moz-transform: rotate(90deg) translate(0px, 25px);
+  -o-transform: rotate(90deg) translate(0px, 25px);
+  -ms-transform: rotate(90deg) translate(0px, 25px);
+}
+.arrow.down{
+  transform: rotate(0deg) translate(0px, 25px);
+  -webkit-transform: rotate(0deg) translate(0px, 25px);
+  -moz-transform: rotate(0deg) translate(0px, 25px);
+  -o-transform: rotate(0deg) translate(0px, 25px);
+  -ms-transform: rotate(0deg) translate(0px, 25px);
+}
+.arrow.up{
+  transform: rotate(180deg) translate(0px, 25px);
+  -webkit-transform: rotate(180deg) translate(0px, 25px);
+  -moz-transform: rotate(180deg) translate(0px, 25px);
+  -o-transform: rotate(180deg) translate(0px, 25px);
+  -ms-transform: rotate(180deg) translate(0px, 25px) translate(0px, 25px);
+}
+.arrow.right{
+  transform: rotate(270deg) translate(0px, 25px);
+  -webkit-transform: rotate(270deg) translate(0px, 25px);
+  -moz-transform: rotate(270deg) translate(0px, 25px);
+  -o-transform: rotate(270deg) translate(0px, 25px);
+  -ms-transform: rotate(270deg) translate(0px, 25px);
+}

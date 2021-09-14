@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="72px" height="13px" viewBox="0 0 72 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>oss hor</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Контакты/01-Контакты" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-535.000000, -172.000000)">
+        <g id="oss-hor" transform="translate(535.000000, 169.000000)">
+            <g id="Stacked-Group">
+                <g id="marker" transform="translate(61.000000, 4.000000)">
+                    <circle id="Oval-2" stroke="#103F6E" stroke-width="2" cx="5" cy="5" r="5"></circle>
+                    <circle id="Oval-3" fill="#103F6E" cx="5" cy="5" r="2"></circle>
+                </g>
+                <text id="OSSystem" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" fill="#103F6E">
+                    <tspan x="0.216796875" y="13">OSSystem</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

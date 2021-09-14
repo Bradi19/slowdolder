@@ -1,0 +1,130 @@
+.mainHeader{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(50% 53.19% at 50% 53.19%, #4987FF 0%, #3870DE 100%), #3870DE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+  justify-content: center;
+
+.mainHeader__img {
+  margin-top: 60px;
+
+  .mainHeader__img_mob{
+    display: none;
+    width: 100%;
+  }
+} 
+
+.headerContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  color: white;
+  h3{
+    font-family: 'Avenir-Medium';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 5.73rem;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    margin: 0 0 30px 0;
+
+  }
+
+  p{
+    font-family: 'Avenir-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.19rem;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 715px;
+    margin: 0;
+  }
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .mainHeader{
+    padding-bottom: 35px;
+    .mainHeader__img{
+      margin-left: 323px;
+
+    }
+    .headerContent{
+      h3{
+        max-width: 500px;
+        margin: 0 0 14px 0;
+    
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 1.64rem;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.8px){
+  .mainHeader{
+    padding-bottom: 0px;
+    .mainHeader__img{
+      margin-left: 323px;
+    }
+    .headerContent{
+      h3{
+        max-width: 500px;
+        margin: 0 0 14px 0;
+    
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 1.64rem;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.8px){
+  .mainHeader{
+    padding-bottom: 0px;
+    .mainHeader__img{
+      width: 100%;
+      margin-left: 0px;
+      background: #3870DE;
+      height: 350px;
+      max-height: 450px;
+
+      .mainHeader__img_large {
+        display: none;
+      }
+      .mainHeader__img_mob {
+        display: block;
+      }
+    }
+
+    .headerContent{
+      h3{
+        max-width: 430px;
+        margin: 0 0 14px 0;
+        font-size: 2.77rem;
+        line-height: 2.77rem;
+    
+      }
+      p {
+        font-size: 1.0rem;
+        line-height: 1.47rem;
+        max-width: 255px;
+      }
+    }
+  }
+}

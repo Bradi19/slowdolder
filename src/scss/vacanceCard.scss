@@ -1,0 +1,102 @@
+.vacanceCardCont{
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  word-wrap: break-word;
+  color: #103F6E;
+  //box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+  .vacanceCardHead{
+    width: 100px;
+    color: white;
+    font-size: 1.08rem;
+    border-radius: 5%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .vacanceCardLongTitle{
+    font-size: 2.23rem;
+    line-height: 2.61rem;
+  }
+  .vacanceCardLongDescr{
+    max-height: 7.36rem;
+    height: 7.36rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    flex: 1 0 auto;
+    overflow: hidden;
+    p, span, li, ul{
+      margin-bottom: 0;
+      font-size: 1.23rem;
+      line-height: 1.84rem;
+    }
+    ul{
+      padding: 0;
+      list-style: none;
+      li{
+        margin-left: 32px;
+        position: relative;
+      }
+      li::before {
+        content: "";
+        top: 0.92rem;
+        left: -18px;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #4CBAF9;
+        border-radius: 50%;
+        position: absolute;
+      }
+    }
+  }
+  .vacanceCardFooter{
+    font-size: 1.23rem;
+    line-height: 1.84rem;
+    color: #4CBAF9;
+    display: flex;
+    //display: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .hoverClass {
+    transition: all .4s ease-in-out;
+    &:hover{
+      transform: scale(1.05, 1.05);
+      box-shadow: 0 6px 20px 0 rgba(0,0,0,0.3);
+      z-index: 50;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
+      .vacanceCardFooter{
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .vacanceCardCont{
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .vacanceCardCont{
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .vacanceCardCont{
+    padding: 24px;
+  }
+}

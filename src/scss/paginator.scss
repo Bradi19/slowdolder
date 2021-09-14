@@ -1,0 +1,18 @@
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &_item {
+    border: 1px solid aqua;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+
+  &_item.active {
+    background-color: darkgoldenrod;
+  }
+}

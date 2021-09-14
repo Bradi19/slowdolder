@@ -1,0 +1,28 @@
+.my-uploader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: 1px solid #103F6E;
+    width: 100%;
+    min-height: 150px;
+    // color: black;
+    // padding: 1rem;
+}
+.onDragOver {
+    background-color: #3172ab;
+}
+.customInputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputFileLabel {
+    width: 100%;
+    padding-top: 30%;
+    //width: 100px;
+    margin: auto;
+    // background: url(../../../images/plus-512.png) no-repeat center;
+}

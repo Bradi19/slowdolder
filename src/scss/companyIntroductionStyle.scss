@@ -1,0 +1,148 @@
+@media screen and (min-width: 1280px){
+  .company_info{
+    max-height: 360px;
+    background-color: #44A6F6;
+    color: white;
+    padding-left: 96px;
+    padding-right: 96px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1279px){
+  .company_info{
+    background-color: #44A6F6;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.main-about-description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  h4 {
+    font-size: 2.23rem;
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      margin-left: 16px;
+      margin-top: 5px;
+      cursor: pointer;
+      transition: margin-left 1s;
+    }
+    &:hover{
+      img{
+        margin-left: 32px;
+      }
+    }
+  }
+  a {
+    font-size: 1.3rem;
+    &:link {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+.main-about-items * {
+  //border: 1px solid red;
+}
+.main-about-items{
+  margin-top: -40px;
+  margin-bottom: -40px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  .main-about-item {
+    flex-grow: 1;
+    display: flex;
+    // min-width: 20%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 40px;
+    color: #12416F;
+    .main-about-body{
+      margin-top: 16px;
+      margin-left: 16px;
+      .main-about-title {
+        font-size: 1.846rem;
+        font-weight: bold;
+        line-height: 2.54rem;
+      }
+      .main-about-text {
+        font-size: 1.384rem;
+        font-weight: 500;
+        line-height: 1.9rem;
+      }
+    }
+    .main-aboutIMG {
+      width: 90px;
+    }
+  }
+}
+
+.company_info-mobile{
+  padding: 24px;
+  display: flex;
+  background-color: #3797E5;
+  flex-direction: column;
+  color: #FFFFFF;
+  h4{
+    font-size: 1.92rem;
+    margin-bottom: 24px;
+  }
+  p{
+    font-size: 1.23rem;
+    padding: 0px;
+  }
+  .main-about-items-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    .itemAboutUs-mobile{
+      display: flex;
+      flex-direction: column;
+      // margin: 24px;
+      img{
+
+      }
+      p{
+        text-align: center;
+        font-size: 1.41rem;
+        font-weight: 900;
+      }
+    }
+
+  }
+}
