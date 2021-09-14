@@ -7,7 +7,7 @@
 1. соблюдение чистоты когда при помощи eslint с настройкой от Airbnb
 
 ## Getting Started:
->$ git clone https://git.ossystem.ua/oss=projects/ossystem.com.ua/front
+>$ git clone 
 
 >$ cd react-node && npm install
 
