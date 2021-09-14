@@ -1,0 +1,23 @@
+.vacanceMainCont{
+    width: 100%;
+    border-style: solid;
+    margin-top: 1rem;
+    border-width: 0px;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+}
+
+.vacanceMainCont > div {
+    padding: 1rem;
+    width: 100%;
+}
+.headerCont {
+    display: inline-flex;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+}
+
+.ButtonContainer > Button{
+    margin-left: 1rem;
+}

@@ -1,0 +1,32 @@
+@import "../../../scss/mixins";
+.eventsHeaderAdm{
+  background-image: url('../../../images/background/Blog.jpg');
+  &:before{
+    content: "";
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(50,110,170,.2);
+  }
+}
+.evetsAdminMainCont{
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: -96px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  .evetsAdminCell{
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    flex-grow: 1;
+    //border-right: 1px solid #ccc;
+    //border-bottom: 1px solid #ccc;
+    @include flex-wrap-fix(400px, 1920px);
+  }
+}

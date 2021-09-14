@@ -1,0 +1,34 @@
+.default_button_adm {
+  font-size: 1.23rem;
+  color: #FFFFFF;
+  font-family: Avenir-Regular, sans-serif;
+  background-color: #44A6F6;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+  border-radius: 1px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  min-width: 248px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  min-height: 41px;
+
+  &:hover {
+    background-color: #398DD1;
+  }
+}
+.to_upper_case{
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px){
+  .default_button {
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

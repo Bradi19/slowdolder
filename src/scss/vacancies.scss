@@ -1,0 +1,186 @@
+@import "./mixins";
+.vacansiesMainCont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    .filterAreaCont{
+      // box-shadow: 13px 15px 45px 5px rgba(0,0,0,0.2);
+      margin-right: 96px;
+      margin-left: 96px;
+      //margin-top: -96px;
+      background-color: white;
+      z-index: 10;
+      position: relative;
+      top: -80px;
+      margin-bottom: -80px;
+      .boxShedowVacance {
+        box-shadow: 0 6px 20px 0 rgba(0,0,0,0.3);
+        @media screen and (max-width: 767px){
+          box-shadow: none;
+        }
+      }
+
+      &.mobile {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 32px;
+      }
+    }
+  @media screen and (min-width: 972px) and (max-width: 1279px) {
+    .filterAreaCont{
+      margin-right: 32px;
+      margin-left: 32px;
+    }
+  }
+  @media screen and (max-width: 971px){
+    .filterAreaCont{
+      margin-right: 0px;
+      margin-left: 0px;
+      top: 0px;
+      margin-bottom: 0;
+
+    }
+  }
+}
+.vacanceList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .vacanceCel{
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    @include flex-wrap-fix(500px, 1920px);
+    @media screen and (max-width: 767px){
+      border: none;
+    }
+  }
+
+}
+
+.mobileFilterArea{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(16, 63, 110, 0.45);
+  .dropdownFilterHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #103F6E;
+    padding: 8px 24px;
+    font-size: 18px;
+    line-height: 29px;
+    .defultImageCont{
+      //transition: transform 1s;
+    }
+    .rotateImage{
+      transform: rotate(-180deg);
+      //transition: transform 1s;
+    }
+  }
+}
+
+.filterItemsCont{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 96px;
+  z-index: 100;
+  border-bottom: 1px solid rgba(172, 183, 204, 0.37);
+  align-items: center;
+  @media screen and (max-width: 767px){
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    max-height: 140px;
+    min-height: 0px;
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: 0.6s;
+  }
+  .itemCont ,.choosenItem{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.38rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px){
+      padding: 3px 5px;
+      margin: 2px 4px 4px 2px;
+      font-size: 16px;
+      font-family: Avenir-Regular, sans-serif;
+      // height: 32px;
+    }
+    &.mobile {
+      width: 100%;
+      justify-content: center;
+      margin-right: 0;
+    }
+  }
+  .itemCont {
+    @media screen and (min-width: 768px){
+      color: #103F6E;
+      background-color: #EDF0F8;
+
+      &:hover{
+        background-color: #C2DDF6;
+      }
+    }
+    @media screen and (max-width: 761px){
+      color: #103F6E;
+      background-color: #EDF0F8;
+    }
+  }
+  .choosenItem{
+    @media screen and (min-width: 768px){
+      color: white;
+      background-color: #44A6F6;
+
+      &:hover{
+        color: #103F6E;
+        background-color: #C2DDF6;
+      }
+    }
+    @media screen and (max-width: 761px){
+      color: white;
+      background-color: #44A6F6;
+    }
+  }
+  &.mobile {
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.closeFilterItemsCont{
+  max-height: 0px;
+  padding-bottom: 0px;
+}
+
+.editInfo{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.23rem;
+  margin-bottom: 40px;
+  padding: 0 32px;
+  color: #103F6E;
+  @media screen and (max-width: 761px){
+    margin-top: 96px;
+  }
+  h3{
+    margin: 16px;
+    font-size: 33px;
+    font-weight: 500;
+  }
+}

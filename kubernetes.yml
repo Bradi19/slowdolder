@@ -1,0 +1,141 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env
+  namespace: {NAMESPACE}
+data:
+  DB_DATABASE: "landing-production"
+  DB_PASSWORD: "passwd"
+  DB_USER: "root"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  namespace: {NAMESPACE}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      imagePullSecrets:
+      - name: ossua
+      containers:
+      - image: {IMAGE_BACKEND_NAME}
+        imagePullPolicy: Always
+        name: api
+      initContainers:
+      - command:
+        - node
+        - server/migrations/index.js
+        image: {IMAGE_BACKEND_NAME}
+        imagePullPolicy: Always
+        name: init-db
+        envFrom:
+          - configMapRef:
+              name: env
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin
+  namespace: {NAMESPACE}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin
+  template:
+    metadata:
+      labels:
+        app: admin
+    spec:
+      imagePullSecrets:
+      - name: ossua
+      containers:
+      - image: {IMAGE_ADMIN_NAME}
+        imagePullPolicy: Always
+        name: admin
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front
+  namespace: {NAMESPACE}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      imagePullSecrets:
+      - name: ossua
+      containers:
+      - image: {IMAGE_FRONT_NAME}
+        imagePullPolicy: Always
+        name: front
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb
+  namespace: {NAMESPACE}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      imagePullSecrets:
+      - name: ossua
+      restartPolicy: Always
+      containers:
+      - name: mongodb
+        image: bitnami/mongodb:3
+        imagePullPolicy: Always
+        env:
+        - name: MONGODB_DATABASE
+          valueFrom:
+            configMapKeyRef:
+              key: DB_DATABASE
+              name: env
+              optional: false
+        - name: MONGODB_ROOT_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              key: DB_PASSWORD
+              name: env
+              optional: false
+        - name: MONGODB_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              key: DB_USER
+              name: env
+              optional: false
+        - name: MONGODB_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              key: DB_PASSWORD
+              name: env
+              optional: false

@@ -1,0 +1,19 @@
+@import "../../../scss/mixins";
+.vacansiesHeaderAdm{
+  background-image: url('../../../images/background/openvacancy.jpg');
+}
+.vacanciesAdmFullListCont{
+  margin: -96px 96px 96px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  // width: 100%;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.3);
+  .vacanciesAdmCel{
+    position: relative;
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    @include flex-wrap-fix(500px, 1920px);
+  }
+}

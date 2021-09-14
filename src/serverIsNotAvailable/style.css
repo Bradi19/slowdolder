@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Medium.eot');
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+		url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-Medium.woff') format('woff'),
+		url('AvenirNextCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding-left: 30px;
+    font-family: "Avenir Next Cyr";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.container {
+    display: inline-block;
+    color: #326EAA;
+    text-align: center;
+}
+
+.error {
+    font-size: 6.667rem;
+    font-weight: 500;
+    letter-spacing: -0.2rem;
+    line-height: 8.133rem;
+}
+
+.title {
+    font-size:  2.4rem;
+    line-height: 2.933rem;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 1.6rem;
+    line-height: 2.667rem;
+}
+
+.robot {
+    display: inline-block;
+    width: 33.33rem;
+    height: auto;
+    position: relative;
+    top: 80px;
+    right: 70px;
+}
+
+@media screen and (max-width: 1280px){
+    body, html{
+      font-size: 15px;
+    }
+    .robot {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    body, html{
+      font-size: 14px;
+    }
+}
+@media screen and (max-width: 881px){
+    body, html{
+      font-size: 13px;
+    }
+
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .robot {
+        position: static;
+        width: 300px;
+        margin-top: 20px;
+    }
+}

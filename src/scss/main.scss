@@ -1,0 +1,93 @@
+@import "./fonts";
+@import "./constants";
+@import "./simpleTabs.scss";
+@import "./footer";
+@import "./navDropDown";
+@import "./openPossitions.scss";
+@import "./aboutUs.scss";
+@import "./laborConditions.scss";
+@import "./someCard.scss";
+@import "./newNavbar";
+@import "./newNavbarScroling";
+@import "./gallery.scss";
+//AvenirNextCyr-Medium
+
+body,
+html {
+  background-color: #ffffff;
+  font-family     : "Avenir-Regular", sans-serif;
+  margin          : 0 auto;
+  padding         : 0;
+  height          : 100%;
+  // overflow-x: hidden;
+  display         : block;
+  max-width       : 1920px;
+}
+
+@media screen and (max-width: 1280px) {
+
+  body,
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1366px) {
+
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1600px) {
+
+  body,
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+
+  body,
+  html {
+    font-size: 15px;
+  }
+}
+
+#root {
+  height  : 100%;
+  position: relative;
+
+
+  .primary-layout {
+    max-width     : $maxWidth;
+    margin        : auto;
+    display       : flex;
+    flex-direction: column;
+    height        : 100%;
+
+    .navMain {
+      flex: 0 0 auto;
+
+      &.mobile {
+        position: fixed;
+      }
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    footer {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.ellipse {
+  overflow     : hidden;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+}

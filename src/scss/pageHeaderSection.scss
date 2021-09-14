@@ -1,0 +1,65 @@
+.backPageHeaderSection{
+  position: relative;
+  width: 100%;
+  padding-top: 30%;
+  max-height: 580px;
+  min-height: 388px;
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    h2 {
+      text-align: left;
+      font-size: 3.08rem;
+      font-weight: bold;
+      line-height: 55px;
+      color: rgb(255, 255, 255);
+      z-index: 20;
+      margin-left: 96px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.headerSection {
+  position: relative;
+  @media screen and (min-width: 1280px){
+    .headerSectionInnerCont {
+      padding-left: 96px;
+      padding-right: 96px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .headerSectionInnerCont {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .headerSectionInnerCont {
+      padding-left: 5%;
+      padding-right: 5%
+    }
+  }
+  &::before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(50,110,170, 0.2);
+  }
+}
+

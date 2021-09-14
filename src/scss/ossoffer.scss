@@ -1,0 +1,81 @@
+.ossoffer {
+  position: relative;
+
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 0 96px;
+  font-family: Avenir-Regular, sans-serif;
+  color: #103F6E;
+
+  &.mobile {
+    padding: 0 32px;
+  }
+
+  & > h3 {
+    // padding-left: 93px;
+    font-size: 1.8rem;
+    line-height: 35px;
+    padding-bottom: 32px;
+  }
+
+  &__container {
+    // padding: 0 93px;
+    position: relative;
+  }
+
+  &__items {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+    & > li {
+      line-height: 20px;
+      font-size: 1.23rem;
+      display: flex;
+      width: 45%;
+      position: relative;
+      align-items: center;
+      margin-bottom: 20px;
+
+      & > img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 17px;
+      }
+
+      & > div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+    }
+  }
+
+  &_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+.oss_modif {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    width: 100%;
+
+    & > img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 17px;
+    }
+  }
+}

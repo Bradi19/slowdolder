@@ -1,0 +1,168 @@
+@media screen and (min-width: 1280px){
+  .main-labor-cont{
+    margin-right: 96px;
+    margin-left: 96px;
+    .main-labor-cont-title{
+      padding-top: 126px;
+      padding-bottom: 30px;
+      max-width: 1248px;
+      margin: auto;
+      font-size: 2.23rem;
+      line-height: 2.61px;
+      color: #103F6E;
+    }
+    .main-labor-cond-items{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 1248px;
+      margin: auto;
+      justify-content: space-between;
+      .main-labor-cond-item {
+        width: 45%;
+        display: flex;
+        // min-width: 20%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .main-labor-cond-body{
+          margin-left: 30px;
+          margin-top: 30px;
+          .main-labor-cond-title {
+            font-size: 1.38rem;
+            font-weight: 900;
+            line-height: 2.15rem;
+            color: #103F6E;
+          }
+          .main-labor-cond-text {
+            font-size: 1.23rem;
+            line-height: 1.84rem;
+            color: #103F6E;
+          }
+        }
+        .main-labor-condIMG {
+          min-width: 60px;
+        }
+      }
+    }
+    .allLaborCondBtn {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .main-labor-cont{
+    margin-right: 30px;
+    margin-left: 30px;
+    .main-labor-cont-title{
+      padding-top: 126px;
+      padding-bottom: 30px;
+      max-width: 1248px;
+      margin: auto;
+      font-size: 2.23rem;
+      line-height: 2.61px;
+      color: #103F6E;
+    }
+    .main-labor-cond-items{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 1248px;
+      margin: auto;
+      justify-content: space-between;
+      .main-labor-cond-item {
+        width: 45%;
+        display: flex;
+        // min-width: 20%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .main-labor-cond-body{
+          margin-left: 30px;
+          margin-top: 30px;
+          .main-labor-cond-title {
+            font-size: 1.38rem;
+            font-weight: 900;
+            line-height: 2.15rem;
+            color: #103F6E;
+          }
+          .main-labor-cond-text {
+            font-size: 1.23rem;
+            line-height: 1.84rem;
+            color: #103F6E;
+          }
+        }
+        .main-labor-condIMG {
+          min-width: 60px;
+        }
+      }
+    }
+    .allLaborCondBtn {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .main-labor-cont{
+    margin-right: 24px;
+    margin-left: 24px;
+    .main-labor-cont-title{
+      padding-top: 48px;
+      padding-bottom: 30px;
+      max-width: 1248px;
+      margin: auto;
+      font-size: 2.23rem;
+      line-height: 2.61px;
+      color: #103F6E;
+    }
+    .main-labor-cond-items{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 1248px;
+      margin: auto;
+      justify-content: space-between;
+      .main-labor-cond-item {
+        width: 100%;
+        display: flex;
+        // min-width: 20%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .main-labor-cond-body{
+          margin-left: 30px;
+          margin-top: 30px;
+          .main-labor-cond-title {
+            font-size: 1.38rem;
+            font-weight: 900;
+            line-height: 2.15rem;
+            color: #103F6E;
+          }
+          .main-labor-cond-text {
+            font-size: 1.23rem;
+            line-height: 1.84rem;
+            color: #103F6E;
+          }
+        }
+        .main-labor-condIMG {
+          min-width: 60px;
+        }
+      }
+    }
+    .allLaborCondBtn {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+}
+
+.arrowWeOffer{
+  margin: 32px 0px 64px 0px;
+}

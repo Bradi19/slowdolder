@@ -1,0 +1,69 @@
+@import "../../../scss/mixins";
+.imgPreviewImageDivCont{
+    flex-grow: 1;
+    @include flex-wrap-fix(200px, 1920px);
+}
+.imgPreviewImageDiv{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    //border: 1px solid #ccc;
+    padding-top: 100%;
+    position: relative;
+    //height: 200px;
+    width: 100%;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 6px 20px 0 rgba(0,0,0,0.3);
+        z-index: 50;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+}
+.previewImageContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputCheckBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    opacity: 0;
+}
+.lableChecBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0px;
+}
+.checkedLable{
+    background-color: rgba(220, 200, 200, 0.65);
+}
+
+.headerPrevieCont{
+    display: flex;
+    //background-color: #44A6F6;
+    .deleteChoosenPhoto, p{
+        color: #FFFFFF;
+        font-family: Avenir-Regular, sans-serif;
+        background-color: #44A6F6;
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 1.03rem;
+    }
+    p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    .deleteChoosenPhoto:hover{
+        background-color: #398DD1;
+    }
+}

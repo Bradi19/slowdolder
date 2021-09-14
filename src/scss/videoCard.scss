@@ -1,0 +1,57 @@
+.videoCardCont{
+  width: 100%;
+  padding-top: 75%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .backgroundHoverDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(76, 186, 249, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    &:hover{
+      opacity: 1;
+    }
+    .hoverCancelBtn{
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+    .hoverCardVideoDiv{
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      left: 16px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      h4{
+        font-size: 18px;
+      }
+      &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(76, 186, 249, 0.61);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,18 @@
+.someCard{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  .imgCont{
+    width: 100%;
+    padding: 0 24px 16px 24px;
+    img{
+      width: 100%;
+    }
+  }
+  h5{
+    text-align: center;
+  }
+  p{
+    text-align: justify;
+    line-height: 127%;
+  }
+}

@@ -1,0 +1,54 @@
+.plane_btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #44A6F6;
+  box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.1);
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__disabled {
+    background-color: #9da4ab;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 11px;
+    right: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 19px;
+      height: 17px;
+      position: relative;
+      left: -2px;
+    }
+  }
+
+  &:hover{ background-color: #3d87c3 }
+
+  img {
+    width: 19px;
+    height: 17px;
+    position: relative;
+    left: -2px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .plane_btn {
+    position: static;
+    margin: 0 auto;
+  }
+}

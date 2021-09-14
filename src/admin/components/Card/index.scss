@@ -1,0 +1,63 @@
+.gallery_card {
+  width: 29.3%;
+  display: flex;
+  min-height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 2% 2%;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow:
+          rgba(0, 0, 0, 0.25) 0 14px 45px,
+          rgba(0, 0, 0, 0.22) 0 10px 18px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+  }
+
+  &__hovered {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    opacity: 0;
+    letter-spacing: 5px;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(
+                    330deg,
+                    #e05252 0%,
+                    #99e052 25%,
+                    #52e0e0 50%,
+                    #9952e0 75%,
+                    #e05252 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:hover > &__hovered {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+
+  }
+  &__actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99999;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover > &__actions {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+
+  }
+}

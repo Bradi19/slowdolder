@@ -1,0 +1,135 @@
+@import "./mixins";
+
+.laborConditions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .laborMainConteiner{
+    margin-right: 96px;
+    margin-left: 96px;
+    margin-top: -96px;
+    box-shadow: 13px 15px 45px 5px rgba(0,0,0,0.2);
+    background-color: white;
+    z-index: 10;
+
+    &.mobile {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    .laborMain {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+      .top-border{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #ccc;
+        z-index: 50;
+      }
+      .left-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #ccc;
+        width: 1px;
+        z-index: 50;
+      }
+      .right-border {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #ccc;
+        z-index: 50;
+      }
+      .bottom-border{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #ccc;
+        z-index: 50;
+      }
+      .labor-card-cont{
+        cursor: pointer;
+        background-color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 200px;
+        @include flex-wrap-fix(360px, 1920px);
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        align-items: center;
+
+        &.mobile {
+          @include flex-wrap-fix(600px, 1920px);
+        }
+
+        .pic-cont{
+          padding: 30px;
+          border: 0px;
+          img{
+            height: 52px;
+          }
+        }
+        .text-cont{
+          font-family: Avenir-Regular, sans-serif;
+          font-size: 1.385rem;
+          line-height: 2.15rem;
+          color: #103F6E;
+          text-align: center;
+          padding: 0 30px 30px 30px;
+          border: 0px;
+        }
+        .hoverDivCont{
+          background-color: white;
+          z-index: 100;
+          position: absolute;
+          top: -30px;
+          left: -30px;
+          right: -30px;
+          display: flex;
+          box-shadow: 13px 15px 45px 5px rgba(0,0,0,0.2);
+          flex-direction: column;
+          min-height: 18.75rem;
+          .headerHoverDivCont{
+            font-family: Avenir-Medium, sans-serif;
+            padding: 16px;
+            display: flex;
+            color: #164472;
+            flex-direction: row;
+            font-size: 1.385rem;
+            font-weight: 500;
+            line-height: 2.15rem;
+            align-items: center;
+            img{
+              height: 43px;
+              margin-right: 8px;
+            }
+            div {
+              font-size: 1.08rem;
+              line-height: 1.61rem;
+            }
+
+          }
+          .bodyHoverDivCont{
+            color: #164472;
+            padding: 16px;
+          }
+        }
+      }
+      .hover-labor-card-cont {}
+    }
+  }
+}

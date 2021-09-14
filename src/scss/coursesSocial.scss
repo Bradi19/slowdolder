@@ -1,0 +1,291 @@
+@keyframes showForm {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .flow-form-container-icon {
+    width: 72px;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    animation: showForm 300ms linear;
+    z-index: 5;
+    cursor: pointer;
+  
+    .icon-message {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 32px;
+      height: 32px;
+      background-image: url(../images/courses/social/message.svg);
+      transition: transform 100ms;
+    }
+  }
+  
+  .wrapper-content {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 5;
+    transition: transform 100ms;
+  
+    .flow-form-container {
+      width: 420px;
+      height: 212px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      position: relative;
+      transition: transform 100ms linear;
+
+      .icon-cross {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 20px;
+        top: 20px;
+        background-image: url(../images/courses/social/cross.svg);
+        transition: transform 100ms linear;
+        cursor: pointer;
+        z-index: 6;
+      }
+
+      .icon-arrow {
+        position:absolute;
+        left: 20px;
+        top: 100px;
+        width: 16px;
+        height: 12px;
+        background-image: url(../images/courses/social/arrow.svg);
+        transition: transform 100ms linear;
+        cursor: pointer;
+        z-index: 6;
+      }
+
+      .flow-form-wrapper-qr{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+
+        .qrIcon{
+          text-align: center;
+          height: 80px;
+          width: 170px!important;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          .text{
+            font-family: Avenir-Regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 130%;
+            color: #000000;
+            opacity: 0.6;
+          }
+        }
+
+        .qrCode{
+          .img-qr {
+            max-width: 74px;
+            transition: transform 100ms linear;
+          }
+        }        
+      }
+
+      .flow-form-wrapper{
+        position: relative;
+        padding: 30px;
+
+        .headerQuestion{
+          margin-bottom: 20px;
+          font-family: Avenir-Medium;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 38px;
+          color: #3870DE;
+        }
+  
+        .simpleText{
+          font-family: Avenir-Medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000000;
+          opacity: 0.6;
+        }
+
+        .writeUs{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 25px;
+
+          .icons{
+            display: flex;
+            margin-right: 34px;
+
+            .icon-telegram {
+              margin-right: 25px;
+              width: 32px;
+              height: 32px;
+              background-image: url(../images/courses/social/telegram.svg);
+              cursor: pointer;
+
+              &:hover{
+                background-image: url(../images/courses/social/telegramHover.svg);
+              }
+              
+              &:active{
+                background-image: url(../images/courses/social/telegramPressed.svg);
+              }
+            }
+        
+            .icon-viber {
+              margin-right: 25px;
+              width: 32px;
+              height: 32px;
+              background-image: url(../images/courses/social/viber.svg);
+              cursor: pointer;
+
+              &:hover{
+                background-image: url(../images/courses/social/viberHover.svg);
+              }
+
+              &:active{
+                background-image: url(../images/courses/social/viberPressed.svg);
+              }
+            }
+        
+            .icon-whatsApp {
+              width: 32px;
+              height: 32px;
+              background-image: url(../images/courses/social/whatsapp.svg);
+              cursor: pointer;
+
+              &:hover{
+                background-image: url(../images/courses/social/whatsappHover.svg);
+              }
+
+              &:active{
+                background-image: url(../images/courses/social/whatsappPressed.svg);
+              }
+            }
+          }
+        }
+        
+        .callUs{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+        .numberShowed{
+          display: flex;
+          margin-right: 16px;
+          justify-content: space-between;
+          padding: 8px 18px;
+          height: 36px;
+          width: 180px;
+        }
+  
+        .showNumber{
+          display: flex;
+          margin-right: 16px;
+          justify-content: space-between;
+          padding: 8px 20px;
+          height: 36px;
+          width: 180px;
+          background: #3870DE;
+          border-radius: 18px;
+          cursor: pointer;
+  
+          .showText{
+            font-family: Avenir-Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+          }
+  
+          .icon-callWhite {
+            width: 16px;
+            height: 17px;
+            background-image: url(../images/courses/social/phoneWhite.svg);
+            transition: transform 100ms linear;
+          }
+  
+          &:hover {
+            background: #4481F9;
+          }
+      
+          &:active {
+            background: #3060BE;
+          }
+        }
+    
+        .icon-message {
+          width: 32px;
+          height: 32px;
+          background-image: url(../images/courses/social/message.svg);
+          transition: transform 100ms linear;
+        }
+    
+        .icon-callBlack {
+          width: 16px;
+          height: 17px;
+          background-image: url(../images/courses/social/phoneBlack.svg);
+          transition: transform 100ms linear;
+        }
+  
+        .number{
+          font-family: Avenir-Regular;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+          color: #666666;
+        }
+      }
+        
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) { 
+    .wrapper-content {
+      bottom: 14px;
+      right: 14px;
+
+      .flow-form-container { 
+        transform: scale(.9) translateX(6%);
+      }
+    }
+  }
+
+  @media screen and (max-width: 415px) { 
+    .wrapper-content {
+      .flow-form-container { 
+        transform: scale(.8) translateX(14%);
+        width: 400px;
+      }
+    }
+  }
+  

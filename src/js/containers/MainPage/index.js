@@ -2,11 +2,11 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
-// import OpenPossitions from '../../components/OpenPossitions';
-// import CompanyOffers from '../../components/CompanyOffers/index';
-// import WelcomeDiv from '../../components/WelcomDiv/index';
-// import CompanyBlog from '../CompanyBlog/index';
-// import CompanyIntroduction from '../../components/CompanyIntroduction/index';
+import OpenPossitions from '../../components/OpenPossitions';
+import CompanyOffers from '../../components/CompanyOffers/index';
+import WelcomeDiv from '../../components/WelcomDiv/index';
+import CompanyBlog from '../CompanyBlog/index';
+import CompanyIntroduction from '../../components/CompanyIntroduction/index';
 import { HELMET_ROUTE_MAP } from '../../constants';
 
 class MainPage extends PureComponent {
@@ -25,11 +25,11 @@ class MainPage extends PureComponent {
         <Helmet>
           <title>{HELMET_ROUTE_MAP[locale].main}</title>
         </Helmet>
-        {/* <WelcomeDiv /> */}
-        {/* <OpenPossitions /> */}
-        {/* <CompanyIntroduction {...this.props} /> */}
-        {/* <CompanyOffers /> */}
-        {/* <CompanyBlog /> */}
+        <WelcomeDiv />
+        <OpenPossitions />
+        <CompanyIntroduction {...this.props} />
+        <CompanyOffers />
+        <CompanyBlog />
       </div>
     );
   }

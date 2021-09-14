@@ -1,0 +1,48 @@
+.navBarCont{
+    background-color: #326EAA;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem !important;
+    .logoCont {
+      margin-left: 32px;
+      display: flex;
+      align-items: center;
+    }
+    .right-container {
+      display: flex;
+      flex-direction: row;
+      text-transform: uppercase;
+      align-items: center;
+    }
+    .link, .linkLang {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        background-color: #205e8d;
+      }
+
+      &.selected, &.active {
+        color: white !important;
+        background-color: #205e8d;
+      }
+    }
+    .link {
+      padding: 1.5rem;
+    }
+    .linkLang {
+      margin-right: 5px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      text-align: center;
+    }
+}
+

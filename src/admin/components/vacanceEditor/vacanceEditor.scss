@@ -1,0 +1,258 @@
+.VacanceHeaderAdm{
+  font-family: Avenir-Regular,sans-serif;
+  width: 100%;
+  padding-top: 30%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../../../images/background/profilevacansy.jpg');
+  .VacanceHeaderContAdm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .VacanceHeaderTextAdm{
+      .VacaneHeaderInputAdm{
+        color: rgb(255, 255, 255);
+        margin-left: 96px;
+        text-align: left;
+        font-size: 3.08rem;
+        font-weight: bold;
+        line-height: 55px;
+        z-index: 20;
+        margin-bottom: 36px;
+      }
+      .dateCont{
+        margin-right: 96px;
+        margin-left: 96px;
+        position: relative;
+        .dateText{
+          color: rgb(255, 255, 255);
+          font-size: 1.8rem;
+          line-height: 34px;
+          cursor: pointer;
+          margin: 0;
+        }
+        .calendarCont{
+          position: absolute;
+        }
+      }
+      .filterCont{
+        display: flex;
+        flex-direction: row;
+        margin-top: 34px;
+        margin-left: 96px;
+        align-items: center;
+        p, select{
+          margin-right: 24px;
+          margin-bottom: 0px;
+        }
+        p{
+          color: rgb(255, 255, 255);
+          font-size: 1.3rem;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+}
+
+.richTextEditorCont{
+  position: relative;
+  .showResultBtn, .showResultBtn2{
+    position: absolute;
+    padding: 3px 7px;
+    top: 11px;
+    background-color: #4CBAF9;
+    color: white;
+  }
+  .showResultBtn{
+    left: 425px;
+  }
+  .showResultBtn2{
+    left: 300px;
+  }
+}
+.inerBodyContCard{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.RichTextEditor__root___2QXK-{
+  border: 1px solid #fff;
+  .EditorToolbar__root___3_Aqz{
+    margin: 0;
+  }
+  .RichTextEditor__editor___1QqIU .public-DraftEditorPlaceholder-root, .RichTextEditor__editor___1QqIU .public-DraftEditor-content {
+    padding: 9px 0px;
+  }
+}
+
+.RichTextEditor__editor___1QqIU{
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.bodyVacanceCont{
+  font-family: Avenir-Regular, sans-serif;
+  color: #103F6E;
+  margin-top: 32px;
+  margin-right: 96px;
+  margin-left: 96px;
+
+  .RichTextEditor__root___2QXK-{
+    border: 1px solid #fff;
+  }
+  .DraftEditor-editorContainer{
+    h1, h2 {
+      font-size: 2.23rem;
+      line-height: 2.61rem;
+      margin-bottom: 8px;
+      font-family: Avenir-Regular, sans-serif;
+    }
+    h3{
+      font-size: 1.38rem;
+      line-height: 2.15rem;
+      margin-bottom: 8px;
+      font-family: Avenir-Regular, sans-serif;
+    }
+    span{
+      line-height: 2.31rem;
+    }
+  }
+  .RichTextEditor__editor___1QqIU .RichTextEditor__paragraph___3NTf9 {
+    font-size: 1.23rem;
+    line-height: 1.84rem;
+    font-family: Avenir-Regular, sans-serif;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .public-DraftStyleDefault-ul, .public-DraftStyleDefault-ol {
+    font-size: 1.23rem;
+    line-height: 2.31rem;
+    font-family: Avenir-Regular, sans-serif;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .resultDescription{
+    font-family: Avenir-Regular, sans-serif;
+    color: #103F6E;
+    h1, h2 {
+      font-size: 2.23rem;
+      line-height: 2.61rem;
+      margin-bottom: 8px;
+    }
+    h3{
+      font-size: 1.38rem;
+      line-height: 2.15rem;
+      margin-bottom: 8px;
+    }
+    span{
+      font-size: 1.23rem;
+      line-height: 1.85rem;
+    }
+    p{
+      font-size: 1.23rem;
+      line-height: 1.85rem;
+      margin-bottom: 24px;
+    }
+    li{
+      font-size: 1.23rem;
+      line-height: 2.31rem;
+    }
+  }
+  .resultDescription {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-left: 32px;
+        position: relative;
+      }
+      li::before {
+        content: "";
+        top: calc(50% - 0.25rem);
+        left: -18px;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #4CBAF9;
+        border-radius: 50%;
+        position: absolute;
+      }
+      margin: 0 0 24px;
+    }
+  }
+}
+
+.vacanceCardContMainAdm{
+  position: fixed;
+  width: 500px;
+  top: 170px;
+  right: 96px;
+  z-index: 9999;
+  //margin-left: 96px;
+  //margin-right: 96px;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+  .RichTextEditor__root___2QXK-{
+    border: 1px solid #fff;
+  }
+  span{
+    line-height: 1.84rem;
+  }
+  .RichTextEditor__editor___1QqIU .RichTextEditor__paragraph___3NTf9 {
+    font-size: 1.23rem;
+    line-height: 1.84rem;
+    font-family: Avenir-Regular, sans-serif;
+    margin: 0;
+  }
+  .public-DraftStyleDefault-ul, .public-DraftStyleDefault-ol {
+    font-size: 1.23rem;
+    line-height: 1.84rem;
+    font-family: Avenir-Regular, sans-serif;
+    margin: 0;
+  }
+  .vacanceCardLongDescrAdm{
+    max-height: 7.36rem;
+    height: 7.36rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    flex: 1 0 auto;
+    overflow: hidden;
+    p, span, li, ul{
+      margin-bottom: 0;
+      font-family: Avenir-Regular, sans-serif;
+      font-size: 1.23rem;
+      line-height: 1.84rem;
+    }
+    ul{
+      list-style: none;
+      li{
+        margin-left: 32px;
+        position: relative;
+      }
+      li::before {
+        content: "";
+        top: calc(50% - 0.25rem);
+        left: -18px;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: #4CBAF9;
+        border-radius: 50%;
+        position: absolute;
+      }
+    }
+
+  }
+}
+
+.ButtonContEditVacance{
+  margin: 96px;
+  display: flex;
+  justify-content: center;
+}
