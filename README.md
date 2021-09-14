@@ -1,4 +1,4 @@
-# react-node [(ossystem.ua)](https://ossystem.ua)
+# react-node 
 Сайт ориентирован на потенциальных кандидатов для работы в компании OSSystem.
 
 ### Requirements:
