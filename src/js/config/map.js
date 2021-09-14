@@ -1,4 +1,4 @@
-import ossMarker from '../../images/mapMarkers/ossystem.png';
+import ossMarker from '../../images/mapMarkers/INTShop.png';
 import { COMPANY_LOCATION } from '../constants';
 import { pathNeptun, pathMarket } from './path';
 // import oss from '../../images/mapMarkers/oss_vert.svg';
@@ -24,12 +24,12 @@ export const markers = [
       },
     },
     draggable: false,
-    title: 'OSSystem',
+    title: 'INTShop',
     label: '',
   },
   // company label
   {
-    name: 'ossystem',
+    name: 'INTShop',
     position: COMPANY_LOCATION,
     opacity: 1,
     icon: {

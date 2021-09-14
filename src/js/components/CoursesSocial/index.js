@@ -77,7 +77,7 @@ class CoursesSocial extends React.PureComponent {
                   <div className="icons">
                     <a
                       className="icon-telegram"
-                      href="https://t.me/OSSystem_it"
+                      href="https://t.me/INTShop"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => {

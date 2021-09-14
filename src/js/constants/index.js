@@ -75,7 +75,7 @@ export const ROUTE_MAP = {
   graduated: '/courses/graduated',
 };
 
-const OSS = 'OSSystem';
+const OSS = 'INTShop';
 
 export const HELMET_ROUTE_MAP = {
   ru: {

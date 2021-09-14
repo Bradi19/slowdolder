@@ -102,10 +102,10 @@ class CoursesHeader extends React.PureComponent {
       default:
         return null;
     }
-    const linktoFacebook = <div data-href="https://ossystem.ua/courses"><a href="" onClick={() => this.newWindow('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fossystem.ua%2Fcourses&amp;src=sdkpreparse')}><img className="icon_img" src={Images.facebook} alt="ossystem facebook" /></a></div>;
-    const linktoFacebookPhone = <div data-href="https://ossystem.ua/courses"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fossystem.ua%2Fcourses&amp;src=sdkpreparse"><img className="icon_img" src={Images.facebook} alt="ossystem facebook" /></a></div>;
-    const lintToLinkedIn = <a href="" onClick={() => this.newWindow('https://www.linkedin.com/shareArticle?mini=true&url=https://ossystem.ua/courses&title=React courses&summary=My%20favorite%20developer%20program&source=LinkedIn')}><img className="icon_img" src={Images.linkedin} alt="ossystem linkedin" /></a>;
-    const lintToLinkedInPhone = <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ossystem.ua/courses&title=React courses&summary=My%20favorite%20developer%20program&source=LinkedIn"><img className="icon_img" src={Images.linkedin} alt="ossystem linkedin" /></a>;
+    const linktoFacebook = <div data-href="https://INTShop.com.ua/courses"><a href="" onClick={() => this.newWindow('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%INTShop.ua%2Fcourses&amp;src=sdkpreparse')}><img className="icon_img" src={Images.facebook} alt="INTShop facebook" /></a></div>;
+    const linktoFacebookPhone = <div data-href="https://INTShop.com.ua/courses"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%INTShop.ua%2Fcourses&amp;src=sdkpreparse"><img className="icon_img" src={Images.facebook} alt="INTShop facebook" /></a></div>;
+    const lintToLinkedIn = <a href="" onClick={() => this.newWindow('https://www.linkedin.com/shareArticle?mini=true&url=https://INTShop.com.ua/courses&title=React courses&summary=My%20favorite%20developer%20program&source=LinkedIn')}><img className="icon_img" src={Images.linkedin} alt="INTShop linkedin" /></a>;
+    const lintToLinkedInPhone = <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://INTShop.ua/courses&title=React courses&summary=My%20favorite%20developer%20program&source=LinkedIn"><img className="icon_img" src={Images.linkedin} alt="INTShop linkedin" /></a>;
     return (
       <div className="my_container">
         <div id="grey">`</div>
@@ -130,8 +130,8 @@ class CoursesHeader extends React.PureComponent {
               </div>
               <div className="talk_to_friends">
                 <img className="share_img" src={Images.share} alt="share" />
-                <a href="" onClick={() => this.newWindow('https://www.linkedin.com/shareArticle?mini=true&url=https://ossystem.ua/courses&title=React courses&summary=My%20favorite%20developer%20program&source=LinkedIn')}><img className="icon_img" src={Images.linkedin} alt="ossystem linkedin" /></a>
-                <div data-href="https://ossystem.ua/courses"><a href="" onClick={() => this.newWindow('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fossystem.ua%2Fcourses&amp;src=sdkpreparse')}><img className="icon_img" src={Images.facebook} alt="ossystem facebook" /></a></div>
+                <a href="" onClick={() => this.newWindow('https://www.linkedin.com/shareArticle?mini=true&url=https://INTShop.ua/courses&title=React courses&summary=My%20favorite%20developer%20program&source=LinkedIn')}><img className="icon_img" src={Images.linkedin} alt="INTShop linkedin" /></a>
+                <div data-href="https://INTShop.ua/courses"><a href="" onClick={() => this.newWindow('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FossINTShopystem.ua%2Fcourses&amp;src=sdkpreparse')}><img className="icon_img" src={Images.facebook} alt="INTShop facebook" /></a></div>
                 <Translate value="courses.buttons.share" />
               </div>
             </div>

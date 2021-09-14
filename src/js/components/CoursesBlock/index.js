@@ -290,15 +290,15 @@ export default class CoursesBlock extends React.PureComponent {
         {courseClass === "baseCourse" && this.blockProgrammOfBaseCourse(PlanOfCourse, courseClass)}
         <h1 className="course_header"><Translate value="courses.course_header_3" /></h1>
         <div className="about_us">
-          <div className="about_us_main_img"><img src={width >= 480 ? Images.photo768 : Images.photo375} alt="OSSystem team" /></div>
+          <div className="about_us_main_img"><img src={width >= 480 ? Images.photo768 : Images.photo375} alt="INTShop team" /></div>
           <div className="about_us_description">
             <div className="about_us_text">
-              <Translate value="courses.ossystem" />
+              <Translate value="courses.INTShop" />
             </div>
             <div className="about_us_images">
-              <a href="https://www.instagram.com/ossystem_company/"><img src={Images.instagram} alt="Instagram" /></a>
+              <a href="https://www.instagram.com/INTShop/"><img src={Images.instagram} alt="Instagram" /></a>
               <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFQtblt-25pRwAAAWxxpHT4PCRKyj3v-RLw5pykpvXv4HeM9jlgWM21Tz6ZkOOvDJVlna_yJvD9OjYQ5xPLA8OlohOdhECzR7O8_GxoRQm_lxvToClugJlzytOWYTUFk-8LPcg=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F3552182"><img src={Images.linkedin} alt="Linkedin" /></a>
-              <a href="https://www.facebook.com/ossystem.ltd"><img src={Images.facebook} alt="Facebook" /></a>
+              <a href="https://www.facebook.com/INTShop.ltd"><img src={Images.facebook} alt="Facebook" /></a>
             </div>
           </div>
         </div>

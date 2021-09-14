@@ -34,7 +34,7 @@ class MainAboutSection extends PureComponent {
       <div className="main-about">
         <div className="about__description-mobile">
           <div className="img-container">
-            <img src={logo} alt="OSSystem" onClick={onClick} />
+            <img src={logo} alt="INTShop" onClick={onClick} />
           </div>
           <div className="descr-container">
             <p className={`toggleDescription ${openDescription ? 'openToggleDescription' : ''}`}>
@@ -51,7 +51,7 @@ class MainAboutSection extends PureComponent {
             aboutItemsData.map(item => (
               <div key={item.linkText} className="aboutUsMobile">
                 <div className="imgCont">
-                  <img height={48} src={item.imgUrl} alt="OSSystem" />
+                  <img height={48} src={item.imgUrl} alt="INTShop" />
                 </div>
                 <h3><Translate value={item.title} /></h3>
                 <h4 style={{ marginBottom: 0 }}>
@@ -81,7 +81,7 @@ class MainAboutSection extends PureComponent {
             <Translate value="about.article2" />
           </p>
           <div className="img-container">
-            <img src={logo} alt="OSSystem" onClick={onClick} />
+            <img src={logo} alt="INTShop" onClick={onClick} />
           </div>
         </div>
         <div className="section about-items">

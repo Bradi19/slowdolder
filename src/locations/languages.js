@@ -226,7 +226,7 @@ export const languages = {
       emailPlace: 'Введіть e-mail',
     },
     careerPage: {
-      header: 'Кар\'єра в OSSystem',
+      header: 'Кар\'єра в INTShop',
       offers: {
         header: 'Ми пропонуємо',
         body: [
@@ -306,7 +306,7 @@ export const languages = {
       'Main',
       'Company',
       'Careers',
-      'Work in OSSystem',
+      'Work in INTShop',
       'Company life',
       'Contacts',
     ],
@@ -376,7 +376,7 @@ export const languages = {
       emailPlace: 'Enter you e-mail',
     },
     careerPage: {
-      header: 'Careers in OSSystem',
+      header: 'Careers in INTShop',
       offers: {
         header: 'Мы предлогаеммм',
         body: [
@@ -392,7 +392,7 @@ export const languages = {
         header: 'Развитие карьеры',
       },
       steps: {
-        header: 'How to get to OSSystem',
+        header: 'How to get to INTShop',
         arrOfSteps: [
           'Send Resum',
           'Interview interview',
