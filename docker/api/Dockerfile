@@ -1,10 +1,10 @@
-FROM node:8 as build
+FROM node:12 as build
 WORKDIR /opt/ossystem.ua/
 COPY package*.json ./
 RUN npm ci -q
 COPY . .
 
-FROM node:8-alpine
+FROM node:12-alpine
 LABEL organization="ossystem"\
       maintainer="u@xaked.com"
 WORKDIR /opt/ossystem.ua/
