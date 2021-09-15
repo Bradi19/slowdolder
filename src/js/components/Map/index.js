@@ -51,7 +51,7 @@ class MapContainer extends PureComponent {
           <Marker
             onClick={this.onMarkerClick}
             title="Tooltip"
-            name="Ossystem"
+            name="INTShop"
           />
           <InfoWindow
             marker={this.state.activeMarker}

@@ -66,7 +66,7 @@ class NavBarItem extends PureComponent {
               ? DropdownArrowWhite
               : DropdownArrowBlue
             }
-            alt="OSSystem"
+            alt="INTShop"
           />
           <DropdownMenu {...menuOptions} >
             {

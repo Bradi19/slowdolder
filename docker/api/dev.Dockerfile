@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:12
 WORKDIR /opt/ossystem.ua/
 COPY package*.json ./
 RUN npm ci -q \

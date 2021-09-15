@@ -1,4 +1,4 @@
-FROM node:8 as build
+FROM node:12 as build
 WORKDIR /opt/ossystem.ua/
 COPY package*.json ./
 RUN npm ci -q

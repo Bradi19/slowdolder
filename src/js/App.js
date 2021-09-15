@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Header from './components/Header';
 import MainPageCont from './containers/MainPage';
-import Vacancies from './containers/Vacancies';
+import Cart from './containers/Cart';
 import VacanciesDetail from './containers/VacanciesDetail';
 import SingleCompanyEvent from './containers/SignleCompanyEvent';
 import Company from './containers/Company';
@@ -48,7 +48,7 @@ class App extends Component {
           <main className={this.props.res.width <= 1279 ? 'mobile' : ''}>
             <Switch>
               <Route exact path={ROUTE_MAP.main} component={MainPageCont} />
-              <Route exact path={ROUTE_MAP.vacancies} component={Vacancies} />
+              <Route exact path={ROUTE_MAP.vacancies} component={Cart} />
               <Route exact path={ROUTE_MAP.vacancyDetail} component={VacanciesDetail} />
               <Route exact path={ROUTE_MAP.career} component={Career} />
               <Route exact path={ROUTE_MAP.contacts} component={Contacts} />

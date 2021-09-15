@@ -97,7 +97,7 @@ const Graduated = (props) => {
                 openTimeoutMS={10000}
                 ariaHideApp={false}
             >
-                <img src={img} alt="ossystem" className="img-fluid" id="graduated-secrtificate" />
+                <img src={img} alt="INTShop" className="img-fluid" id="graduated-secrtificate" />
                 <i onClick={() => handleOpenModal('null')} className="far fa-times-circle certificate-close-btn"></i>
             </Modal>
         </div>

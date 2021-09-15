@@ -8,7 +8,7 @@ import MainAboutSection from './MainAboutSection';
 import { History } from './History';
 import { HELMET_ROUTE_MAP } from '../../constants';
 import Mission from './Mission';
-import backgroundImage from '../../../images/background/companyossystem.jpg';
+import backgroundImage from '../../../images/background/INTShop.jpg';
 
 class AboutUs extends PureComponent {
   static propTypes = {

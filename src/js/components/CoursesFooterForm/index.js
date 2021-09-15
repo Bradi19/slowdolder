@@ -4,7 +4,7 @@ import { Marker } from 'react-google-maps';
 import { COMPANY_LOCATION_FORM } from '../../constants';
 import CourseForm from "../CoursesForm";
 import Map from "../CoursesFormMap";
-import ossMarker from '../../../images/mapMarkers/ossystem.png';
+import ossMarker from '../../../images/mapMarkers/INTShop.png';
 import "../../../scss/courseForm.scss";
 
 export default class CoursesFooterForm extends React.PureComponent {
@@ -42,7 +42,7 @@ export default class CoursesFooterForm extends React.PureComponent {
         <div className="contMap">
           <Map>
           <Marker
-            key="ossystem"
+            key="INTShop"
             position={COMPANY_LOCATION_FORM}
             opacity={1}
             icon={ossMarker}

@@ -1,4 +1,4 @@
-# react-node
+# react-node [(ossystem.ua)](https://ossystem.ua)
 Сайт ориентирован на потенциальных кандидатов для работы в компании OSSystem.
 
 ### Requirements:
@@ -7,7 +7,7 @@
 1. соблюдение чистоты когда при помощи eslint с настройкой от Airbnb
 
 ## Getting Started:
->$ git clone 
+>$ git clone https://git.ossystem.ua/oss=projects/ossystem.com.ua/front
 
 >$ cd react-node && npm install
 

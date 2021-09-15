@@ -71,19 +71,17 @@ class CoursesBody extends React.PureComponent {
         courseClassName = "Курсы Тестировщика";
         break;
       case "baseCourse": {
-        backgroundImage =backgroundImageBaseCourse;
+        backgroundImage = backgroundImageBaseCourse;
         courseClassName = "Базовый курс программирования";
         break;
       }
       case "react":
         backgroundImage = backgroundImageReact;
         courseClassName = "Курсы ReactJS";
-
         break;
       case "selenium":
         backgroundImage = backgroundImageReact;
         courseClassName = "Курсы автоматизации тестирования";
-
         break;
       default:
         return null;

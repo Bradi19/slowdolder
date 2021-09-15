@@ -39,14 +39,14 @@ export const mainContacts = [
     type: 'email',
     text: 'contacts.mail',
     icon: email,
-    href: 'mailto:office@ossystem.com.ua?subject=Ossystem',
+    href: 'mailto:office@INTShop.com.ua?subject=INTShop',
   },
 ];
 
 export const mainSocials = [
   {
     type: 'facebook',
-    link: 'https://www.facebook.com/ossystem.ltd',
+    link: 'https://www.facebook.com/INTShop.ltd',
     icon: facebook,
     iconHover: facebookHover,
     footerIcon: footerFacebook,
@@ -64,7 +64,7 @@ export const mainSocials = [
   },
   {
     type: 'instagram',
-    link: 'https://www.instagram.com/ossystem_company',
+    link: 'https://www.instagram.com/INTShop',
     icon: instagram,
     iconHover: instagramHover,
     footerIcon: footerInst,

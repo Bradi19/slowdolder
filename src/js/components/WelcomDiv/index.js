@@ -11,18 +11,18 @@ export default class WelcomeDiv extends PureComponent {
         <div className="mainHeader__img">
           <img
             src={bg}
-            alt="OSSystem"
+            alt="INTShop"
             className="mainHeader__img_large"
           />
 
           <img
             src={bgMob}
-            alt="OSSystem"
+            alt="INTShop"
             className="mainHeader__img_mob"
           />
         </div>
         <div className="headerContent">
-          <h3><Translate value="mainPage.header.title" /> <span>OSSYSTEM!</span></h3>
+          <h3><Translate value="mainPage.header.title" /> <span>INTShop!</span></h3>
           <p><Translate value="mainPage.header.body" /></p>
         </div>
       </div>

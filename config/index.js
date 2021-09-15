@@ -13,22 +13,17 @@ const baseDir = path.join(__dirname, '..');
 
 const CLIENT_API_URL = {
   development: 'http://localhost:3000',
-  // old development: 'https://api.ossystem.ua',
-  // development: 'https://api.dev.ossystem.ua',
-  // production: 'http://api.dev.ossystem.com.ua',
-  production: 'https://api.ossystem.ua/',
 };
 
 const CLIENT_URL = {
   development: 'http://front:8080',
-  production: 'http://dev.ossystem.com.ua/',
 };
 
 const common = {
   baseDir,
   port: 3000,
   env: ENV,
-  salt: 'ossystem',
+  salt: 'INTShop',
   youtubeAPIKey: 'AIzaSyDikG7IkUj-vKlM4PhOpbFvDq6rUBWM7Vo',
   uploadBaseURL: 'uploads',
   uploadDir: path.join(baseDir, 'uploads'),
@@ -57,11 +52,11 @@ const environments = {
     fbPixelId: null,
     clientApiUrl: CLIENT_API_URL.development,
     clientUrl: CLIENT_URL.development,
-    db: 'mongodb://mongodb:27017/landing-development',
+    db: 'mongodb://192.168.1.109:20000',
     email: {
-      sender: 'a.sashko@ossystem.ua',
+      sender: 'mukasbok@gmail.com',
       recievers: [
-        'a.sashko@ossystem.ua',
+        'mukasbok@gmail.com',
       ],
       transport: {
         host: 'mail.ossystem.ua',
@@ -91,10 +86,7 @@ const environments = {
     email: {
       sender: 'noreply@ossystem.com.ua',
       recievers: [
-        'kaa.ossystem@gmail.com',
-        // 'gdd.ossystem@gmail.com',
-        'taras.myza@gmail.com',
-        'gds.ossystem@gmail.com',
+          "mukasbok@gmai.com"
       ],
       transport: {
         service: 'gmail',
