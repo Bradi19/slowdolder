@@ -7,6 +7,14 @@ export const initialLang = 'ru';
 export const CHANGE_SPECIALTY_VACANCIES_FILTER = 'CHANGE_SPECIALTY_VACANCIES_FILTER';
 export const CHANGE_LEVEL_VACANCIES_FILTER = 'CHANGE_LEVEL_VACANCIES_FILTER';
 
+// cart empty & add to cart
+
+export const GET_CART_EMPTY = 'GET_CART_EMPTY';
+export const GET_CART_REQUEST = 'GET_CART_REQUEST';
+export const GET_CART_REQUEST_SUCCESS = 'GET_CART_REQUEST';
+export const GET_CART_REQUEST_FAIL = 'GET_CART_REQUEST';
+
+
 export const GET_CLIENT_REQUEST = 'GET_CLIENT_REQUEST';
 export const GET_CLIENT_SUCCESS = 'GET_CLIENT_SUCCESS';
 export const GET_CLIENT_FAIL = 'GET_CLIENT_FAIL';
@@ -126,6 +134,8 @@ export const API_MAP = {
   vacancies: '/vacancies',
   vacanciesCallBack: '/vacancies/callBack',
   contacts: '/contacts',
+  addToCart: '/addToCart',
+  cart: '/cart',
   video: '/video',
   events: '/events',
 };

@@ -90,6 +90,7 @@
     "redux-thunk": "2.2.0",
     "reselect": "3.0.1",
     "serve-favicon": "2.4.5",
+    "shopexpress-core": "^2.4.31",
     "window-resize-listener-react": "1.0.3",
     "youtube-node": "1.3.2"
   },
@@ -124,7 +125,5 @@
     "webpack-dev-server": "^2.11.5",
     "webpack-merge": "4.1.1"
   },
-  "pre-commit": [
-    "lint:eslint"
-  ]
+  "pre-commit": []
 }

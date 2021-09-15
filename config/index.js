@@ -52,7 +52,7 @@ const environments = {
     fbPixelId: null,
     clientApiUrl: CLIENT_API_URL.development,
     clientUrl: CLIENT_URL.development,
-    db: 'mongodb://127.0.0.1:27017',
+    db: 'mongodb://192.168.1.109:20000',
     email: {
       sender: 'mukasbok@gmail.com',
       recievers: [
